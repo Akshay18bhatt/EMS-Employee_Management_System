@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="employee.svg">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <section id="root">
+        <form class="col-1" id="myForm">
+            <input type="text" name="name" placeholder="Employee Name" required>
+            <!-- <input type="number" name="id" placeholder="Employee ID" required> -->
+            <input type="text" name="role" placeholder="Role" required>
+            <select name="team" id="">
+                <option value="SDE">SDE</option>
+                <option value="Quality Assurance">QA</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="HR">HR</option>
+                <option value="ADMIN">ADMIN</option>
+            </select>
+            <input type="text" name="company" placeholder="Company Name" required>
+            <input type="number" name="salary" placeholder="Salary">
+            <button>Add Employee</button>
+        </form>
+        <div class="col-2">
+            <table>
+                <thead>
+                    <th>Emp. NAME</th>
+                    <th>EMP. ID</th>
+                    <th>ROLE</th>
+                    <th>TEAM</th>
+                    <th>COMPANY NAME</th>
+                    <th>SALARY</th>
+                    <th>MANAGE</th>
+                    
+                </thead>
+                <tbody id="table_body"> 
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./employee.js"></script>
+    <script src="./manage.js"></script>
+    
+</body>
+</html>
